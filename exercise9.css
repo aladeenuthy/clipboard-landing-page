@@ -1,0 +1,291 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-size: 18px;
+ font-family: 'Bai Jamjuree', sans-serif;
+ color: hsl(210, 10%, 33%);
+  line-height: 1.5;
+}
+img{
+ max-width: 100%;
+}
+header{
+ background-image: url("bg-header-desktop.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.header-content, .section3-container3{
+width: 46%;
+margin: 0 auto;
+text-align: center;
+}
+.header-content img{
+  margin-top: 120px;
+}
+.header-content h1{
+ margin-top: 20px;
+}
+header p{
+ margin: 10px 0px 20px 0px;
+}
+ button{
+ margin-top: 30px;
+ background-color:hsl(171, 66%, 44%);
+ padding: 10px 40px 10px 40px;
+ border: none;
+ border-radius: 100px;
+ font-size: 16px;
+ color: #fff;
+font-family: 'Bai Jamjuree', sans-serif;
+ height: 50px;
+  box-shadow: 5px 8px 19px hsl(171, 66%, 44%);
+}
+button:last-of-type{
+ background-color:  hsl(233, 100%, 69%);
+ margin-left: 10px;
+ box-shadow: 5px 8px 17px hsl(233, 100%, 69%);
+}
+.section1{
+ margin-top: 120px;
+}
+.section1  h2{
+ margin-bottom: 15px;
+}
+.section1 .y{
+ width: 50%;
+ margin: 0 auto;
+ text-align: center;
+ line-height: 1.5;
+ margin-top: 10px;
+}
+.section1-container{
+  margin-top: 100px;
+ display: flex;
+ justify-content: space-between;
+}
+.image-container{
+ margin-left: -26px;
+ flex-shrink: 0.5;
+}
+.image-content{
+ margin-top: 5%;
+ margin-left: 50px;
+}
+.image-content p{
+ margin-top: 10px;
+ width: 70%;
+}
+.image-content div{
+ margin-bottom: 40px;
+}
+.section2{
+  margin-top: 70px;
+  text-align: center;
+}
+.section2 h1{
+  font-size: 37px;
+  margin-bottom: 10px;
+}
+.section2 p{
+  width: 53%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.tablet{
+  width: 70%;
+  margin: 0 auto;
+}
+.section3{
+  text-align: center;
+}
+
+.section3 p, .section3 h3{
+  margin-top: 13px;
+}
+.section3-container, .section3-container2{
+display: flex;
+width: 80%;
+margin: 0 auto;
+margin-top: 35px;
+justify-content: space-between;
+}
+.section3-container div{
+flex-basis: 32%;
+}
+.section3-container2 div{
+  flex-basis: 17%;
+}
+.section3-container3{
+  width: 55%;
+  margin-top: 90px;
+}
+footer{
+  margin-top: 120px ;
+  padding: 30px 0 35px 0;
+  
+  background-color: hsla(202, 11%, 66%, 0.178);
+}
+ul{
+  list-style: none;
+  display: flex;
+  font-size: 19px;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+
+}
+li{
+  flex-basis: 30%;
+  
+}
+.footer-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+ 
+}
+.icons img{
+  margin-right: 10px;
+}
+
+@media screen and (max-width:600px){
+  header{
+    background-image: url("bg-header-mobile.png");
+  }
+.header-content img{
+  margin-top: 80px;
+}
+ .header-content,button,.section1, .section1 .y, .section2 h2, .section2 p, .section2 .tablet, .section3, .section3-container3{
+   width: 90%;
+ }
+ .section1{
+  margin: 0 auto;
+  margin-top: 120px;
+ }
+ .section1-container{
+ flex-wrap: wrap;
+ }
+ .image-container {
+   margin-left: 0;
+ }
+ .image-container, .image-content{
+   flex-basis: 100%;
+ }
+ .image-content{
+   text-align: center;
+   
+   margin-left: 0;
+   margin-top: 70px;
+   font-size: 20px;
+ }
+ .image-content p{
+   width:  100%;
+ }
+.section2{
+  margin-top: 120px;
+}
+.section2 p{
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+ .section3{
+   margin: 0 auto;
+   margin-top: 100px;
+ }
+ .section3 .top{
+   width: 90%;
+   margin: 0 auto;
+   font-size: 21px;
+ }
+.section3-container{
+  flex-direction: column;
+  margin-top: 100px;
+}
+.section3-container div{
+  margin-bottom: 90px;
+}
+.section3-container2{
+ flex-direction: column; 
+}
+.section3-container2 div{
+  margin-bottom: 60px;
+}
+.section3-container3 h1{
+  font-size: 31px;
+}
+li{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+footer{
+  padding: 50px 0px 50px 0px;
+}
+.footer-container{
+  align-items: center;
+  
+}
+.footer-container img{
+  width: 65px;
+  margin-bottom: 42px;
+}
+.footer-container, ul{
+  flex-direction: column;
+  justify-content:  center;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+.icons img{
+  width: 37px;
+  margin-bottom: 0;
+}
+.icons img:nth-child(1), .icons img:nth-child(2){
+  margin-right: 35px;
+}
+}
